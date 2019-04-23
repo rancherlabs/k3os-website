@@ -1,8 +1,8 @@
 $body-font       : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $header-font     : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color   : #1F2326;
-$secondary-color : #FCFE00;
-// $tritiary-color  : #f15354;
+$secondary-color : #179EFF;
+$tertiary-color  : #EDEFF0;
 $light           : #fdfdfd;
 
 
@@ -11,7 +11,6 @@ $light           : #fdfdfd;
 }
 
 body {
-  line-height: 1.5em;
   font-family: $body-font;
   margin: 0;
   background-color: $light;
@@ -190,26 +189,6 @@ ul.underlined {
   }
 }
 
-.btn {
-  background: lighten($primary-color, 80%);
-  padding: .75rem;
-  text-decoration: none;
-  line-height: 0;
-  color: $primary-color;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  height: 35px;
-
-  > img {
-    padding-right: .5rem;
-  }
-
-  &.no-bg {
-    background: transparent;
-  }
-}
-
 //layout
 section {
   padding: 6rem 0;
@@ -284,6 +263,11 @@ section {
 //accents
 .highlight {
   background-color: $secondary-color;
+  outline: 5px solid $secondary-color;
+}
+
+.secondary {
+  color: $secondary-color !important;
 }
 
 .bg-light {
@@ -304,13 +288,42 @@ section {
   padding: 2rem;
 }
 
-.yellow-dot {
-  background-color: $secondary-color;
-  font-size: 2rem;
-  padding: 2rem;
-  border-radius: 5px;
+.btn {
+  background: lighten($primary-color, 80%);
+  padding: .75rem;
+  text-decoration: none;
+  line-height: 0;
   color: $primary-color;
   font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  height: 35px;
+
+  > img {
+    padding-right: .5rem;
+  }
+
+  &.no-bg {
+    background: transparent;
+  }
+}
+
+.btn-lg {
+  text-align: center;
+  background-color: $secondary-color;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+
+  &.bg-alt {
+    background-color: $tertiary-color;
+    color: $primary-color !important;
+  }
 }
 
 
@@ -319,7 +332,7 @@ section {
     clear: both;
     display: grid;
     grid-template-columns: [left] 1fr [right] 1fr;
-
+    padding: 0;
   }
 
   .black {
@@ -327,7 +340,6 @@ section {
     grid-area: "left";
 
     .black-content {
-      margin: 0 0 0 auto;
 
       * {
         color: $light;
@@ -339,9 +351,13 @@ section {
     grid-area: "right"
   }
 
+  .black, .white {
+    margin: 0 0 0 auto;
+  }
+
   .black-content, .white-content {
     max-width: calc(600px - 4em);
-    padding: 2em;
+    padding: 6em;
   }
 
 
