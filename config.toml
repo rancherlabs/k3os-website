@@ -1,0 +1,41 @@
+baseURL = ""
+languageCode = "en-us"
+title = "k3os"
+theme = "xmin"
+pluralizeListTitles = false
+enableRobotsTXT = true
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableGitInfo = true
+
+[blackfriday]
+fractions = false
+#hrefTargetBlank = true
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlaintext = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+
+[privacy]
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "docs"
+    name = "Docs"
+    url = "https://github.com/rancher/k3os/blob/master/README.md"
+    weight = -110
