@@ -14,7 +14,7 @@ steps:
     context: .
     dockerfile: Dockerfile.prod
     dry_run: true
-    repo: rancherlabs/k3s-website
+    repo: rancherlabs/k3os-website
     password:
       from_secret: docker_password
     username:
@@ -39,7 +39,7 @@ steps:
     context: .
     dockerfile: Dockerfile.dev
     group: publish
-    repo: rancherlabs/k3s-website
+    repo: rancherlabs/k3os-website
     tag: dev
     password:
       from_secret: docker_password
@@ -68,7 +68,7 @@ steps:
     context: .
     dockerfile: Dockerfile.prod
     group: publish
-    repo: rancherlabs/k3s-website
+    repo: rancherlabs/k3os-website
     tag: latest
     password:
       from_secret: docker_password
