@@ -7,4 +7,4 @@ WORKDIR /run
 # Expose default hugo port
 EXPOSE 9000
 
-ENTRYPOINT ["hugo", "serve", "--bind=0.0.0.0", "--buildDrafts", "--buildFuture", "--baseURL=http://mercury:9003" ]
+ENTRYPOINT ["hugo", "serve", "--bind=0.0.0.0", "--buildDrafts", "--buildFuture", "--baseURL=" ]
