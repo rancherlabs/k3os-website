@@ -82,9 +82,11 @@ nav.main-nav {
   padding: .75rem 0;
 
   .logo {
-    height: 50px;
-    width: 161px;
+    font-size: 40px;
     display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
   }
 
   .menu {
@@ -523,14 +525,6 @@ section {
 
   .flex-between {
     padding: .4rem;
-  }
-
-  nav.main-nav {
-    .logo, .logo img {
-      height: 35px;
-      width: 112px;
-      display: inline-block;
-    }
   }
 
   .black-content, .white-content {
