@@ -371,6 +371,12 @@ section {
       font-size: 1em; }
 
   .hidden-small {
-    display: none; } }
+    display: none;
+  }
 
+}
+
+  #k3os {
+    display: none;
+  }
 /*# sourceMappingURL=main.css.map */
