@@ -69,7 +69,7 @@
 
       <nav class="main-nav">
         <div class="flex-between wrap">
-          <a href="/" class="logo">k3OS</a>
+          <a href="/" class="logo" style="height: 50px; position: relative;"><img src="/img/logo.svg?1" height="50"></a>
           <ul class="menu">
             {{ range .Site.Menus.main }}
             <li><a href="{{ .URL | relURL }}" class="btn no-bg">{{ .Name }}</a></li>
