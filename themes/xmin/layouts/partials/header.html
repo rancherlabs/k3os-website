@@ -69,6 +69,7 @@
 
       <nav class="main-nav">
         <div class="flex-between wrap">
+          <a href="/" class="logo" style="width: 50px; position: relative; top: -6px;"></a>
           <ul class="menu">
             {{ range .Site.Menus.main }}
             <li><a href="{{ .URL | relURL }}" class="btn no-bg">{{ .Name }}</a></li>
