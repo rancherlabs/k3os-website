@@ -1,7 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "k3os"
-theme = "blank"
+theme = "projects-theme"
 pluralizeListTitles = false
 enableRobotsTXT = true
 pygmentsCodeFences = true
