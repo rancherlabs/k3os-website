@@ -14,7 +14,7 @@ COPY static static
 COPY .git .git
 
 ADD https://github.com/rancherlabs/projects-theme/archive/master.tar.gz /run/master.tar.gz
-RUN mkdir -p /output /run/node_modules/projects-theme /theme/projects-theme && tar -xzf /run/master.tar.gz -C /run/node_modules/projects-theme --strip=1 && rm /run/master.tar.gz
+RUN mkdir -p /output /run/themes/projects-theme && tar -xzf /run/master.tar.gz -C /run/themes/projects-theme --strip=1 && rm /run/master.tar.gz
 
 RUN ["hugo", "--buildFuture", "--baseURL=https://k3os.io", "--destination=/output"]
 
