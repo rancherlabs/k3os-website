@@ -1,7 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "k3os"
-theme = "xmin"
+theme = "blank"
 pluralizeListTitles = false
 enableRobotsTXT = true
 pygmentsCodeFences = true
