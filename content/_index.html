@@ -1,136 +1,75 @@
 ---
-title: "The Kubernetes OS | k3OS"
+title: "The Kubernetes Operating System"
+description: "k3OS is purpose-built to simplify Kubernetes operations in low-resource computing environments. Installs fast. Boots faster. Managed through Kubernetes."
 date: 2019-02-05T09:52:46-07:00
 ---
 
+
+
+<section class="intro">
+    <div class="bg-primary">
+      <div class="wrap grid-two">
+        <div>
+          <h1>The Kubernetes<br/>Operating System</h1>
+          <h4>k3OS is purpose-built to simplify Kubernetes operations in low-resource computing environments. Installs fast. Boots faster. Managed through Kubernetes.</h4>
+          <!-- <hr>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>          <a href="https://info.rancher.com/meetup-introducing-submariner-multicluster-networking" class="btn" target="_blank" rel="noopener">Sign Up</a> -->
+        </div>
+  
+        <!-- <div class="video-responsive">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div> -->
+      </div>
+    </div>
+  
+    <div class="folder">
+      <h4>Great For</h4>
+      <div class="bg-light grid-dynamic text-center">
+        <h5>Supports multiple architectures</h5>
+        <h5>Runs only the minimum required services</h5>
+        <h5>Doesn’t require a package manager</h5>
+        <!-- <h5>Models infrastructure as code</h5> -->
+      </div>
+    </div>
+  </section>
+
 <section class="wrap">
-  <div class="intro">
-    <div>
-      <!-- stars -->
-      <a class="github-button" href="https://github.com/rancher/k3os" data-icon="octicon-star" data-show-count="true" aria-label="Star rancher/k3OS on Github">Star</a>
-
-      <!-- forks -->
-      <a class="github-button" href="https://github.com/rancher/k3os/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork rancher/k3OS on Github">Fork</a>
-
-      <h1 style="padding-bottom: 15px;">The Kubernetes Operating System</h1>
-      <h3>k3OS is purpose-built to simplify Kubernetes operations in low-resource computing environments. Installs fast. Boots faster. Managed through Kubernetes.<br></h3>
-      <hr/>
-    </div>
-    <div class="text-center">
-      <img src="/img/cube.svg" style="height: 300px;">
-    </div>
-  </div>
-</section>
-
-<section class="bg-primary text-center">
-  <div class="wrap">
-    <div class="grid-two">
+  <h2>Why Use k3os</h2>
+  <div class="grid-three">
       <div>
-        <h2>What Is <span class="secondary">k3OS</span>?</h2>
+        <h5>Fast Installation</h5>
+        <p>You can boot up with k3s available in under 10 seconds, with fast cluster scaling.</p>
+      </div>
+  
+      <div>
+        <h5>Easy Configuration Via Cloud-Init</h5>
+        <p>You can turn a standard k3OS image into a configured system during boot time.</p>
       </div>
 
-      <div class="highlights">
-        <p>
-          <span class="highlight">
-            <span class="content">k3OS is an operating system completely managed by Kubernetes. It launches in seconds and runs almost anywhere.</span>
-          </span>
-        </p>
-        <p>
-          <span class="highlight">
-            <span class="content">As a combined Linux and Kubernetes distribution it has the smallest attack surface and simplest upgrade process of any Kubernetes installation.</span>
-          </span>
-        </p>
-        <p>
-          <span class="highlight">
-            <span class="content">It's lightweight, agile, and includes k3s.</span>
-          </span>
-        </p>
+      <div>
+        <h5>Manage The OS From Within Kubernetes</h5>
+        <p>You don’t need to log into remote nodes. k3OS simplifies installation and upgrading.</p>
       </div>
     </div>
-  </div>
+</section>
+<hr/>
+<section class="wrap">
+  <h2>How it Works</h2>
+  <img src="../images/how-it-works-k3os.svg" alt="{{ .Site.Title }}">
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="text-center">
-      <h2>Why Should You Use k3OS?</h2>
-    </div>
+<section class="get-started">
+  <div class="white text-center">
+    <h2>Get Started</h2>
+    <h4>Can Your OS Deploy Right to the Edge?</h4>
+    <a href="https://github.com/rancher/k3os#quick-start" target="_blank" class="btn">Get Started</a>
   </div>
-</section>
-
-<section class="black-white text-center">
-  <div class="black">
-    <div class="black-content">
-     <h2>First...</h2>
-     <h4 style="font-size: 24px; padding-bottom: 10px;">It’s GREAT For EDGE, IoT, CI, And ARM</h4>
-     <h3>You get ALL the benefits of using k3s, the optimized, simplified, and streamlined Kubernetes distribution.</h3>
-     </br>
-     <div class="grid-one">
-        <a class="btn-lg bg-alt" href="https://k3s.io">The Benefits Of k3s</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="white">
-    <div class="white-content">
-       <h2>Fast...</h2>
-     <h4 style="font-size: 24px; padding-bottom: 10px;">Fast Installation</h4>
-     <h3>You can boot up with k3s available in under 10 seconds, with fast cluster scaling.</h3>
-    </div>
-  </div>
-</section>
-
-<section class="black-white text-center">
-  <div class="white">
-    <div class="white-content">
-      <h2>Easy...</h2>
-     <h4 style="font-size: 24px; padding-bottom: 10px;">Easy Configuration Via Cloud-Init</h4>
-     <h3>You can turn a standard k3OS image into a configured system during boot time.</h3>
-    </div>
-  </div>
-  <div class="black">
-    <div class="black-content">
-      <h2>Simple...</h2>
-      <h4 style="font-size: 24px; padding-bottom: 10px;">Manage The OS From Within Kubernetes</h4>
-      <h3>You don’t need to log into remote nodes. k3OS simplifies installation and upgrading.</h3>
-      </br>
-      <div class="grid-one">
-        <a class="btn-lg" href="https://github.com/rancher/k3os/releases">Download To Get Started</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-light">
-  <div class="grid-one wrap">
-    <div class="indent">
-      <h2 style="text-align: center;">And Even More Benefits!</h2>
-      <h3 style="text-align: center;">We built k3s and k3OS to make deploying Kubernetes as fast, easy, and simple as possible. With that in mind…</h3>
-      </br><br>
-      <div class="text-align: left;">
-        <h4 class="secondary" style="font-size: 40px;">k3OS supports multiple architectures</h4>
-        <h3 style="padding-top: 10px;">k3OS runs on x86 and ARM processors to give you maximum flexibility.</h3>
-        </br>
-        <h4 class="secondary" style="font-size: 40px;">k3OS runs only the minimum required services</h4>
-        <h3 style="padding-top: 10px;">Fewer services means a tiny attack surface, for greater security.</h3>
-        </br>
-        <h4 class="secondary" style="font-size: 40px;">k3OS doesn’t require a package manager</h4>
-        <h3 style="padding-top: 10px;">The required services are built into the distribution image.</h3>
-        </br>
-        <h4 class="secondary" style="font-size: 40px;">k3OS models infrastructure as code</h4>
-        <h3 style="padding-top: 10px;">This makes sure there are no surprises, and that systems come up the same way every time. You can manage system configuration with version control systems, and carry out reliable, repeatable cluster deployments.</h3>
-        </br>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="background-color: black;">
-  <div class="wrap" style="padding: 2em;"> <div class="grid-two">
-    <div>
-      <h2 class="text-left" style="color: white;font-size: 57px; line-height: 1em;">Can Your OS Deploy <br>
-Right to the Edge?</div>
-      <a class="btn-lg" style="min-width: 300px; width: 75%; margin: auto;" href="https://github.com/rancher/k3os#quick-start">Get Started With k3OS</a>
+  <div class="bg-primary text-center">
+    <div class="wrap">
+        <h2>Learn More</h2>
+        <h3>Great for EDGE, IoT, CI, and ARM</h3>
+        <p>You get ALL the benefits of using k3s, the optimized, simplified, and streamlined Kubernetes distribution.</p>
+        <a href="https://k3s.io/" class="btn" target="_blank">Benefits of k3s</a>
     </div>
   </div>
 </section>

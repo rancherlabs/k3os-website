@@ -1,7 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "k3os"
-theme = "xmin"
+theme = "projects-theme"
 pluralizeListTitles = false
 enableRobotsTXT = true
 pygmentsCodeFences = true
@@ -33,7 +33,6 @@ home = ["HTML", "RSS", "Algolia"]
     simple = true
 
 [menu]
-
   [[menu.main]]
     identifier = "docs"
     name = "Docs"
